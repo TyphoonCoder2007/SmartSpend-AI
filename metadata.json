@@ -1,0 +1,7 @@
+{
+  "name": "SmartSpend AI",
+  "description": "A professional, AI-powered expense tracker with receipt scanning, smart insights, and visual analytics.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
