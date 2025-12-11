@@ -1,153 +1,146 @@
-SmartSpend AI – AI-Powered Expense Tracker
+<!-- PROJECT BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React-blue" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-blueviolet" />
+  <img src="https://img.shields.io/badge/Build-Vite-brightgreen" />
+  <img src="https://img.shields.io/badge/AI-Powered-orange" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+  <img src="https://img.shields.io/badge/Contributions-Welcome-success" />
+</p>
 
-SmartSpend AI is an intelligent, modern expense-tracking application built with React + TypeScript + Vite, designed to help users manage finances effortlessly. The system integrates AI models (OpenAI / Gemini) to generate insights, analyze spending patterns, and provide recommendations through an in-app chatbot.
+<h1 align="center">SmartSpend AI</h1>
+<p align="center">An AI-powered expense tracker built with React + TypeScript + Vite</p>
 
-Key Features
-1. Smart Expense Tracking
+---
 
-Add, categorize, and manage transactions.
+## 🚀 Overview
 
-Clean UI components (Card, TransactionForm, Charts, Icon, AppIcon).
+**SmartSpend AI** is an intelligent personal finance tracker that blends clean UI with powerful AI capabilities.  
+Using **OpenAI** and **Gemini** models, the app helps users analyze spending behavior, generate insights, and receive conversational budgeting guidance.
 
-Real-time financial summaries and interactive charts.
+This application is designed for fast performance, modularity, and a smooth user experience.
 
-2. AI-Driven Assistance
+---
 
-AI chatbot powered via:
+## ✨ Features
 
-openaiService.ts
+### **Expense Tracking**
+- Add, edit, and categorize transactions  
+- Interactive financial charts  
+- Summary view of total income, expense, and balance  
 
-geminiService.ts
+### **AI Assistant**
+- Finance-focused chatbot  
+- Spending pattern analysis  
+- Budget optimization suggestions  
+- Uses **OpenAI** + **Gemini** APIs  
 
-Understands user queries related to spending habits.
+### **Modern Web App**
+- Built with React + TypeScript  
+- Vite for lightning-fast development  
+- Reusable, scalable UI components  
+- Clean onboarding and login screens  
 
-Generates insights, budgeting tips, and simplified reports.
+---
 
-3. Secure Local Storage Handling
+## 🧠 Tech Stack
 
-Modular storage utility through storageService.ts.
+| Category | Technology |
+|----------|------------|
+| Frontend | React, TypeScript |
+| Build Tool | Vite |
+| AI Models | OpenAI, Google Gemini |
+| Storage | Local Storage |
+| Components | Custom reusable React components |
 
-Stores and retrieves user data efficiently.
+---
 
-4. Smooth User Experience
+## 📁 Project Structure
 
-Onboarding flow (OnboardingView.tsx)
-
-Authentication view (LoginView.tsx)
-
-Responsive UI, optimized for mobile and desktop.
-
-5. Modern Frontend Stack
-
-React + TypeScript
-
-Vite for blazing-fast builds
-
-Component-based architecture
-
-Clean state management and service abstraction
-
-Project Structure
 smartspend-ai/
 │
 ├── components/
-│   ├── AppIcon.tsx
-│   ├── Card.tsx
-│   ├── ChatBot.tsx
-│   ├── Charts.tsx
-│   ├── Icon.tsx
-│   ├── LoginView.tsx
-│   ├── OnboardingView.tsx
-│   └── TransactionForm.tsx
+│ ├── AppIcon.tsx
+│ ├── Card.tsx
+│ ├── ChatBot.tsx
+│ ├── Charts.tsx
+│ ├── Icon.tsx
+│ ├── LoginView.tsx
+│ ├── OnboardingView.tsx
+│ └── TransactionForm.tsx
 │
 ├── services/
-│   ├── storageService.ts
-│   ├── geminiService.ts
-│   ├── openaiService.ts
+│ ├── storageService.ts
+│ ├── geminiService.ts
+│ ├── openaiService.ts
 │
 ├── App.tsx
 ├── index.tsx
 ├── index.html
-├── package.json
-├── tsconfig.json
 ├── vite.config.ts
-├── types.ts
-└── README.md
+├── tsconfig.json
+├── package.json
+└── types.ts
 
-Tech Stack
-Category	Technology
-Frontend Framework	React + TypeScript
-Build Tool	Vite
-AI Integration	OpenAI API, Gemini API
-Data Handling	Local Storage
-UI	Custom reusable components
-Charting	Custom chart components
-Setup Instructions
-1. Clone the Repository
+yaml
+Copy code
+
+---
+
+## 🔧 Installation & Setup
+
+### **1. Clone the repository**
+```bash
 git clone <your-repo-url>
 cd smartspend-ai
-
-2. Install Dependencies
+2. Install packages
+bash
+Copy code
 npm install
-
-3. Configure Environment Variables
-
+3. Add environment variables
 Create an .env.local file:
 
-VITE_OPENAI_API_KEY=your_key
-VITE_GEMINI_API_KEY=your_key
-
-4. Run the Project
+ini
+Copy code
+VITE_OPENAI_API_KEY=your_openai_key
+VITE_GEMINI_API_KEY=your_gemini_key
+4. Run the development server
+bash
+Copy code
 npm run dev
-
-5. Build for Production
+5. Build for production
+bash
+Copy code
 npm run build
+🤖 AI Integration
+Gemini Service
+Used for fast suggestions and lightweight insights.
+File: services/geminiService.ts
 
-6. Deploy to Any Static Host (Netlify, Vercel, Cloudflare Pages)
-AI Integration Overview
-Gemini
+OpenAI Service
+Used for deep analysis and conversational financial assistance.
+File: services/openaiService.ts
 
-Used for fast and lightweight financial insights.
+The system routes queries to the most appropriate AI model.
 
-Located in: services/geminiService.ts
+🛣️ Roadmap
+Cloud sync (Firebase / Supabase)
 
-OpenAI
+Export reports (PDF, Excel)
 
-Used for advanced conversational and reasoning responses.
-
-Located in: services/openaiService.ts
-
-The application routes queries intelligently depending on context.
-
-Screens & Components
-Core Screens
-
-Onboarding Screen – guides users through setup.
-
-Login View – lightweight authentication mock.
-
-Dashboard – charts + transaction overview.
-
-ChatBot – AI assistant for financial queries.
-
-UI Components
-
-Reusable cards, icons, charts
-
-Clean design system across components
-
-Future Enhancements
-
-Cloud sync with Firebase / Supabase
+ML-based expense prediction
 
 Multi-currency support
 
-Export reports (PDF/Excel)
+Theme customization
 
-Recurring expense predictions
+Multi-wallet support
 
-Full authentication (OAuth)
+🤝 Contributing
+Contributions are welcome.
+Please open an issue or submit a pull request with clear descriptions.
 
-License
-
+📜 License
 This project is licensed under the MIT License.
+
+<p align="center">Made with passion, TypeScript, and AI 🚀</p> ```
